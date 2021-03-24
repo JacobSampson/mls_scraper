@@ -15,57 +15,56 @@ Collected data is in the `output` directory as `properties.csv`. There are 102,9
 
 ### Fields
 
-| Column | Description | Type | 
-| :----------------------------------------------------------: |
-| pid |  | `string` |
-| sell_date |  | `string` |
-| sell_price |  | `string` |
-| list_price |  | `string` |
-| mls |  | `string` |
-| address_long |  | `string` |
-| zip_code |  | `string` |
-| built | | `string` |
-| city | | `string` |
-| county | | `string` |
-| property_type | | `string` |
-| num_bath | | `string` |
-| num_bed | | `string` |
-| fin_sqft | | `string` |
-| above_gd_sqft | | `string` |
-| below_gd_sqft | | `string` |
-| appliances | | `string` |
-| num_fireplaces | | `string` |
-| basement_details | | `string` |
-| common_wall | | `string` |
-| heating | | `string` |
-| ac | | `string` |
-| amenities | | `string` |
-| ext_material | | `string` |
-| num_garage_spaces | | `string` |
-| foundation_size | | `string` |
-| handicap | | `string` |
-| out_buildings | | `string` |
-| pool | | `string` |
-| quarter_baths | | `string` |
-| half_baths | | `string` |
-| threequarter_baths | | `string` |
-| full_baths | | `string` |
-| dining | | `string` |
-| family_room | | `string` |
-| lot | | `string` |
-| lat | | `string` |
-| lng | | `string` |
-| zoning | | `string` |
-| school_district | | `string` |
-| association_fee | | `string` |
-| tax_year | | `string` |
-| annual_taxes | | `string` |
-| fuel | | `string` |
-| sewer | | `string` |
-| water | | `string` |
+*The following are my best interpretations of the field types and units from gathered listings*
 
-
-
+| Column | Description | Type | Units |
+| :--------------------------- |:----------------------------------------------------------|:----------------------------------------------------------:| :---: |
+| pid | Unique ID for property listing | `string` | |
+| sell_date | Sale closing date | `date` | |
+| sell_price | Sale price | `int` | $ |
+| list_price | Listed price | `int` | $ |
+| mls | NMLS# (Nationwide Multistate Licensing System & Registry) | `int` | |
+| address_long | Address | `string` | |
+| zip_code | Zip code | `int` | |
+| built | Year built | `int` | |
+| city | City | `string` | |
+| county | County | `string` | |
+| property_type | Property type | `string` | enum |
+| num_bath | Number of baths | `int` | |
+| num_bed | Number of bedrooms | `int` | |
+| fin_sqft | Finished / Living area | `int`  | sq ft |
+| above_gd_sqft | Above ground living | `int` | sq ft |
+| below_gd_sqft | Below ground living | `int` | sq ft |
+| appliances | Included appliances | `string` | list |
+| num_fireplaces | Number of fireplaces | `int` | |
+| basement_details | Details about basement (setup, flooring...) | `string` | list |
+| common_wall | Has a common wall | `bool` | |
+| heating | Type of heating (forced air...) | `string` | enum |
+| ac | Type of air conditioning | `string` | enum |
+| amenities | General included amenities (e.g. hardwood floors, washer/dryer) | `string` | list |
+| ext_material | Exterior material | `string` | enum |
+| num_garage_spaces | Number of spaces in garage(s) | `int` | |
+| foundation_size | Size of foundation | `int` | sq ft |
+| handicap | Handicap accessible options and limitations | `string` | list |
+| out_buildings | Outdoor buildings (sheds...) | `string` | list |
+| pool | Descriptions of any pools | `string` | list |
+| quarter_baths | Number of quarter baths | `int` | |
+| half_baths | Number of half baths | `int` | |
+| threequarter_baths | Number of three quarter baths | `int` | |
+| full_baths | Number of full baths | `int` | |
+| dining | Type of dining | `string` | enum/list |
+| family_room | Location of family room | `string` | enum |
+| lot | Acres | `float` | |
+| lat | Latitude | `float` | |
+| lng | Longitude | `float` | |
+| zoning | Zoning type of property | `string` | enum |
+| school_district | School district number | `int` | |
+| association_fee | Fees for any property associations | `int` | $ |
+| tax_year | Tax year assessment | `int` | |
+| annual_taxes | Annual taxes | `int` | $ |
+| fuel | Fuel system | `string` | enum |
+| sewer | Sewer system | `string` | enum |
+| water | Water system | `string` | enum |
 
 ## How to Use
 

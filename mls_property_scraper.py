@@ -23,8 +23,8 @@ def scrape_property(url, pid, address):
             return ''
 
     # sell_price #
-    sell_price = extract_el('span.detail.soldprice', lambda x: '' if x == 'None' else re.sub(',', '', x[1:]))
     sell_date = extract_el('span.detail.salesclosedate')
+    sell_price = extract_el('span.detail.soldprice', lambda x: '' if x == 'None' else re.sub(',', '', x[1:]))
     list_price = extract_el('span.detail.listprice', lambda x: '' if x == 'None' else re.sub(',', '', x[1:]))
     mls = extract_el('span.nmls', lambda x: x[5:]) # MLS ID
     address_long = address
