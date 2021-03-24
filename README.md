@@ -17,6 +17,8 @@ Collected data is in the `output` directory as `properties.csv`. There are 102,9
 
 *The following are my best interpretations of the field types and units from gathered listings*
 
+Empty values in the dataset are either blank or `None`
+
 | Column | Description | Type | Units |
 | :--------------------------- |:----------------------------------------------------------|:----------------------------------------------------------:| :---: |
 | pid | Unique ID for property listing | `string` | |
