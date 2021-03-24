@@ -31,7 +31,7 @@ Empty values in the dataset are either blank or `None`
 | built | Year built | `int` | |
 | city | City | `string` | |
 | county | County | `string` | |
-| property_type | Property type | `string` | enum |
+| property_type | Property type | `enum` |  |
 | num_bath | Number of baths | `int` | |
 | num_bed | Number of bedrooms | `int` | |
 | fin_sqft | Finished / Living area | `int`  | sq ft |
@@ -39,38 +39,38 @@ Empty values in the dataset are either blank or `None`
 | below_gd_sqft | Below ground living | `int` | sq ft |
 | appliances | Included appliances | `string` | list |
 | num_fireplaces | Number of fireplaces | `int` | |
-| basement_details | Details about basement (setup, flooring...) | `string` | list |
+| basement_details | Details about basement (setup, flooring...) | `string list` |  |
 | common_wall | Has a common wall | `bool` | |
-| heating | Type of heating (forced air...) | `string` | enum |
-| ac | Type of air conditioning | `string` | enum |
-| amenities | General included amenities (e.g. hardwood floors, washer/dryer) | `string` | list |
-| ext_material | Exterior material | `string` | enum |
+| heating | Type of heating (forced air...) | `enum` |  |
+| ac | Type of air conditioning | `enum` |  |
+| amenities | General included amenities (e.g. hardwood floors, washer/dryer) | `string list` |  |
+| ext_material | Exterior material | `enum` |  |
 | num_garage_spaces | Number of spaces in garage(s) | `int` | |
 | foundation_size | Size of foundation | `int` | sq ft |
-| handicap | Handicap accessible options and limitations | `string` | list |
-| out_buildings | Outdoor buildings (sheds...) | `string` | list |
-| pool | Descriptions of any pools | `string` | list |
+| handicap | Handicap accessible options and limitations | `string list` |  |
+| out_buildings | Outdoor buildings (sheds...) | `string list` |  |
+| pool | Descriptions of any pools | `string list` |  |
 | quarter_baths | Number of quarter baths | `int` | |
 | half_baths | Number of half baths | `int` | |
 | threequarter_baths | Number of three quarter baths | `int` | |
 | full_baths | Number of full baths | `int` | |
 | dining | Type of dining | `string` | enum/list |
-| family_room | Location of family room | `string` | enum |
+| family_room | Location of family room | `enum` |  |
 | lot | Acres | `float` | |
 | lat | Latitude | `float` | |
 | lng | Longitude | `float` | |
-| zoning | Zoning type of property | `string` | enum |
+| zoning | Zoning type of property | `enum` |  |
 | school_district | School district number | `int` | |
 | association_fee | Fees for any property associations | `int` | $ |
 | tax_year | Tax year assessment | `int` | |
 | annual_taxes | Annual taxes | `int` | $ |
-| fuel | Fuel system | `string` | enum |
-| sewer | Sewer system | `string` | enum |
-| water | Water system | `string` | enum |
+| fuel | Fuel system | `enum` |  |
+| sewer | Sewer system | `enum` |  |
+| water | Water system | `enum` |  |
 
 ## How to Use
 
-`run.sh` and `combine.sh` are helper scripts for running the two Python scripts. The scraping is down with BeautifulSoupt4.
+`run.sh` and `combine.sh` are helper scripts for running the two Python scripts. The scraping is down with BeautifulSoup4.
 
 ### Files
 
