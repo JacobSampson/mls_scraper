@@ -54,7 +54,7 @@ Empty values in the dataset are either blank or `None`
 | half_baths | Number of half baths | `int` | |
 | threequarter_baths | Number of three quarter baths | `int` | |
 | full_baths | Number of full baths | `int` | |
-| dining | Type of dining | `string` | enum/list |
+| dining | Type of dining | `enum/list` |  |
 | family_room | Location of family room | `enum` |  |
 | lot | Acres | `float` | |
 | lat | Latitude | `float` | |
